@@ -1,0 +1,68 @@
+=head1 Before you start
+
+Carefully study LiveCDCustomization L<https://help.ubuntu.com/community/LiveCDCustomization>.
+
+
+=head1 Install Ubuntu 12.10 Desktop 32 Bit 
+
+It's recommended to build a 12.10 Ubuntu Live CD/DVD on a running 12.10 Ubuntu System.
+
+It's also recommended to use the same architecture (e.g. i386) for the running system and the Live DVD. 
+
+=head1 Create your build folder
+
+ sudo mkdir /opt/livecd
+ sudo chown user:group /opt/livecd
+ cd /opt/livecd
+
+
+=head1 Obtain the base system
+
+Download 'ubuntu-12.10-desktop-32.iso' for i686 32bit from http://releases.ubuntu.com/ 
+
+and put it into your build folder.
+
+=head1 Run the build scripts
+
+
+Put all the scripts and folder from this directory into your build folder and run 
+
+   /bin/bash ./run.sh 
+
+=head2 Install CPAN Modules
+
+After a while you'll be chrooted and get a cpan shell.
+
+
+ install Task::LiveDVD::FrankfurtPM
+
+
+=head1 Check the iso
+
+If everything went fine there should be an iso-image called C<perl-ubuntu-12.10-desktop-32.iso>
+
+Use Virtualbox, kvm, Xen, whatever to check your new system.
+
+You can safely ignore any error messages about sane and colord. 
+
+Enjoy.
+
+
+=head1 See also
+
+=over 4
+
+=item * LiveCDCustomization L<https://help.ubuntu.com/community/LiveCDCustomization>
+
+=item * LiveCDCustomizationFromScratch L<https://help.ubuntu.com/community/LiveCDCustomizationFromScratch>
+
+=item * Ubuntu Customization Kit L<http://sourceforge.net/projects/uck/>
+
+=item * Remastersys L<http://www.geekconnection.org/remastersys/>
+
+
+=back
+
+__END__
+
+
