@@ -1,0 +1,9 @@
+History for Task::LiveDVD::FrankfurtPM
+======================================
+
+0.02  2013-10-23
+
+      * add Changes
+      * update module list
+      * update dist.ini
+      * update scripts to create module list
