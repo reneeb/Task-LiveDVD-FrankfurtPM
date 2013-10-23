@@ -9,7 +9,7 @@ package Task::LiveDVD::FrankfurtPM;
 use strict;
 use warnings;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 q~A great start to play with Perl~;
 
